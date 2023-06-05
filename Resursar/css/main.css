@@ -1,0 +1,133 @@
+.grid {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 41% 30% 20% 20%;
+    border: black 1px;
+}
+.box {
+    width: 300px;
+    height: 550px;
+    padding: 15px;
+    background-color: rgb(21, 255, 204);
+    box-shadow: 10px 10px lightblue;
+}
+.gridItem {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 254, 254, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+button {
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0px black;
+    box-shadow: 1px 1px rgb(0, 0, 0);
+    font-size: large;
+    cursor:pointer
+    
+}
+
+.h1Style {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.box2 {
+    width: 800px;
+    height: 800px;
+    padding: 15px;
+    background-color: rgb(21, 255, 204);
+    box-shadow: 10px 10px lightblue;
+}
+
+body  {
+    background-color:rgb(255, 255, 255);
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 1390px;
+    margin:auto;
+}
+
+#userform {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    padding: auto;
+    margin: auto;
+    max-width: auto;
+    grid-template-columns:auto auto auto auto auto;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 254, 254, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#tableLink {
+    color: blue; 
+}
+
+#tableLink:hover {
+    cursor:pointer;
+}
+
+.users {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.meny {
+    background-color: black;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+    overflow: hidden;
+
+}
+.li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+li a {
+    text-decoration: none;
+    color: wheat;
+    
+}
+
+li b {
+    text-align: center;
+    font-family: 'Times New Roman';
+    place-content: center;
+    
+}
+h1 {
+    text-align: center;
+}
