@@ -35,6 +35,12 @@ function login() {
 
 // Oppretter bruker som kan logge seg på firebase og få tilgang til nettstaden
 function signUp() {
+    const Checkbox = document.getElementById("GDPR")
+    if (!Checkbox.checked) {
+        alert("Du må godta personvernsopplysningsloven for å fortsette!")
+        return;
+    }
+
     const email = document.getElementById("email").value;
     const alder = document.getElementById("alder").value;
     const fname = document.getElementById("fname").value;
@@ -42,6 +48,7 @@ function signUp() {
     const password = document.getElementById("password").value;
     const skule = document.getElementById("skule").value;
     const tlf = document.getElementById("tlf").value;
+    const GDPR = document.getElementById("GDPR").value;
 
     // Oppretter bruker som kan logge seg på firebase og få tilgang til nettstaden
     auth.createUserWithEmailAndPassword(email, password)
@@ -56,10 +63,11 @@ function signUp() {
                 email: email,
                 alder: alder,
                 password: password,
+                GDPR: GDPR,
                 userId: userCredentials.user.uid
             })
                 .then(function () {
-                    window.location.href = "./index.html";
+                    window.location.href = "./hjeme.html";
                 })
         })
 

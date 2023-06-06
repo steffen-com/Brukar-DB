@@ -6,14 +6,17 @@
 }
 .box {
     width: 300px;
-    height: 550px;
+    height: 575px;
     padding: 15px;
     background-color: rgb(21, 255, 204);
     box-shadow: 10px 10px lightblue;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
 }
 .gridItem {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 254, 254, 0.8);
+
+
     padding: 20px;
     font-size: 20px;
     text-align: center;
@@ -21,15 +24,14 @@
     
 }
 button {
-    background-color: red;
+    background-color: lightskyblue;
     padding: 10px;
-    margin: 10px;
-    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 0px black;
     box-shadow: 1px 1px rgb(0, 0, 0);
     font-size: large;
-    cursor:pointer
+    cursor:pointer;
+  
     
 }
 
@@ -40,15 +42,20 @@ button {
 }
 
 .box2 {
-    width: 800px;
-    height: 800px;
+    width: 150px;
+    height: 100px;
     padding: 15px;
     background-color: rgb(21, 255, 204);
-    box-shadow: 10px 10px lightblue;
+    box-shadow: 8px 8px lightblue;
+    border-radius: 25px;
+    position: relative;
+    right: -29%;
+
+    
 }
 
 body  {
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(207, 207, 207);
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,27 +65,13 @@ main {
     margin:auto;
 }
 
-#userform {
-    display: none;
-}
 
 .grid-container {
     display: grid;
-    padding: auto;
     margin: auto;
     max-width: auto;
     grid-template-columns:auto auto auto auto auto;
 }
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 254, 254, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-}
-
 
 #tableLink {
     color: blue; 
@@ -130,4 +123,27 @@ li b {
 }
 h1 {
     text-align: center;
+}
+
+.none {
+    text-decoration: none ;
+    color: #000;
+}
+
+.box3 {
+    width: 450px;
+    height: 600px;
+    padding: 15px;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 8px 8px lightblue;
+    border-radius: 25px;
+
+    position: absolute;
+    right: 41%;
+    top: 20%;
+}
+
+#dec {
+    color: #000;
+    
 }

@@ -9,25 +9,37 @@
     <link rel="stylesheet" href="Resursar/css/main.css">
 </head>
 
-<body>
+<body onload="checkCookie()">
     <ul class="meny">
         <li><a class="li" href="hjeme.html">hjeme</a></li>
         <li><a class="li" href="index.html">registrer brukar</a></li>
+        <li><a class="li" href="Komponentane.html">logg inn</a></li>
     </ul>
 
-    <h1 >Driftsstøtte</h1> <br> <br>
+    <h1>Læringsverktøy</h1> <br> <br>
+
     <div class="grid-container">
-        <div class="grid-Item"></div>
-        <div class="grid-Item"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="box3">
+            <div class="gridItem">
 
-        <div class="grid-Item">
-            <button onclick="window.location.href = 'Komponentane.html';">Komponentane</button>
+                <div class="box2">
+                    <button><a class="none"
+                            href="https://ndla.no/nn/utdanning/informasjonsteknologi-og-medieproduksjon/vg2">NDLA</a></button>
+                    <br> <br>
+                    <button><a class="none"
+                            href="https://vlfk.itslearning.com/index.aspx?SessionExpired=0">Itslerning</a></button>
+                </div>
+            </div>
+
+            <div class="gridItem">
+                <div class="box2">
+                    <button><a class="none" href="https://www.w3schools.com/">W3Schools</a></button> <br> <br>
+                    <button><a class="none" href="https://kahoot.com/">Kahoot</a></button>
+                </div>
+            </div>
         </div>
-
-        <div class="grid-Item">
-            <button onclick="window.location.href = 'Komponentane.html';">Nettverkstenester</button>
-        </div>
-
     </div>
 
     <script src="Resursar/js/nyNettside.js"></script>
